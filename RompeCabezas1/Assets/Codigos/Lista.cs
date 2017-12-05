@@ -59,6 +59,37 @@ namespace Assets.Codigos
             this.setLong(dLong);
             Console.WriteLine("dato"+ pData);
         }
+        public void addRecordsOrders(int data)
+        {
+            Node newNode = new Node();
+            newNode.setData(data);
+
+            if (this.isEmpty())
+            {
+                setHead(newNode);
+            }
+            else
+            {
+                Node temp = getHead();
+                if (getHead().getData() < data)
+                {
+                    newNode.setNext(getHead());
+                    setHead(newNode);
+                }
+                else
+                {
+                    while ((temp.getNext() != null) && (temp.getNext().getData() > data))
+                    {
+                        temp = temp.getNext();
+                    }
+                    newNode.setNext(temp.getNext());
+                    temp.setNext(newNode);
+                }
+            }
+            int dLong = getLong();
+            dLong++;
+            this.setLong(dLong);
+        }
         public int search(int pDate) {
             Node aux = this.getHead();
             int value = 0;

@@ -6,14 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/nivel1.unity
-    guid: b3c5c2938df306a4baf78c52d5691512
+    path: Assets/Scene/Inicio.unity
+    guid: fe9cd661679d85e4a98c21be265e004f
   - enabled: 1
-    path: Assets/Scene/sceneEnd.unity
-    guid: caa098f42d370ff479e78b66f48a2848
+    path: Assets/Scene/selectNumPlayers.unity
+    guid: 648b1976329ce6948bb366f408a56f80
   - enabled: 1
     path: Assets/Scene/menuPrincipal.unity
     guid: 3e9282d2ec8275547a2256447d06a881
   - enabled: 1
+    path: Assets/Scene/nivel1.unity
+    guid: b3c5c2938df306a4baf78c52d5691512
+  - enabled: 1
     path: Assets/Scene/nivel2.unity
     guid: 898a3c78f39dc7d4eaa73a40a1f0e349
+  - enabled: 1
+    path: Assets/Scene/nivel3.unity
+    guid: af786f379047dbc4c95cd7c9f21e5282
+  - enabled: 1
+    path: Assets/Scene/nivel4.unity
+    guid: 9a03c4b8216398d44aeb6292921fc9ad
+  - enabled: 1
+    path: Assets/Scene/sceneEnd.unity
+    guid: caa098f42d370ff479e78b66f48a2848
+  - enabled: 1
+    path: Assets/Scene/sceneEndTwoPlayer.unity
+    guid: f25863289e8c5554d95f518c03e5e65e
+  - enabled: 1
+    path: Assets/Scene/sceneGanador.unity
+    guid: 1192c984d47bbda4590d8e4e3e721fea
+  - enabled: 1
+    path: Assets/Scene/gameOver.unity
+    guid: d7b0a44fab6f3b14eafc3cc6668b8af3

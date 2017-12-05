@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class MoverPieza : MonoBehaviour {
     public string piezaEstado = "idle";
     public Transform edgeParticles;
@@ -9,13 +8,15 @@ public class MoverPieza : MonoBehaviour {
     public string checkPlacement = "";
     public static int totalScore;
     public static int cont;
-	// Use this for initialization
+    public AudioClip soundPiezaClick;
+    public AudioClip soundOnePoint;
+    public AudioClip soundNonePoint;
+    private AudioSource fuenteAudio;
 	void Start () {
+        fuenteAudio = GetComponent<AudioSource>();
         cont = 0;
         totalScore = 0;
     }
-	
-	// Update is called once per frame
 	void Update () {
         if (piezaEstado == "pickedup")
         {
@@ -27,11 +28,10 @@ public class MoverPieza : MonoBehaviour {
         {
              checkPlacement = "y";
         }
-       
     }
     void OnTriggerStay2D(Collider2D otro)
     {
-        if ((otro.gameObject.name == gameObject.name) && (checkPlacement == "y")) {
+        if ((otro.gameObject.name == gameObject.name) && (checkPlacement == "y") && (otro.tag != gameObject.tag)) {
             otro.GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
             transform.position = otro.gameObject.transform.position;
@@ -41,18 +41,24 @@ public class MoverPieza : MonoBehaviour {
             GetComponent<SpriteRenderer>().color = new Color(1, 7, 1, 3);
             totalScore += 10;
             cont++;
+            fuenteAudio.clip = soundOnePoint;
+            fuenteAudio.Play();
         }
-        if ((otro.gameObject.name != gameObject.name) && (checkPlacement == "y"))
+        if ((otro.gameObject.name != gameObject.name) && (checkPlacement == "y") && (otro.tag != gameObject.tag))
         {
             GetComponent<SpriteRenderer> ().color = new Color(1,1,1,.5f);
             checkPlacement = "n";
             totalScore -= 2;
+            fuenteAudio.clip = soundNonePoint;
+            fuenteAudio.Play();
         }
     }
     private void OnMouseDown()
     {
         piezaEstado = "pickedup";
         checkPlacement = "n";
+        fuenteAudio.clip = soundPiezaClick;
+        fuenteAudio.Play();
     }
     private void OnMouseUp()
     {

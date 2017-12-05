@@ -25,7 +25,5 @@ namespace Assets.Codigos
         public void setData(int pData) {
             this.Data = pData;
         }
-   
-
     }
 }
