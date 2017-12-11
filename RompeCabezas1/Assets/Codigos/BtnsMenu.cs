@@ -20,9 +20,21 @@ public class BtnsMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("nivel4");
     }
-    public void goSceneMenu()
+    public void goSceneNivel5()
     {
-        SceneManager.LoadScene("menuPrincipal");
+        SceneManager.LoadScene("nivel5");
+    }
+    public void goSceneMenuOnePlayer()
+    {
+        SceneManager.LoadScene("menuPrincipalOnePlayer");
+    }
+    public void menuPrincipalOnePlayerScores()
+    {
+        SceneManager.LoadScene("menuPrincipalOnePlayerScores");
+    }
+    public void goSceneMenuTwoPlayer()
+    {
+        SceneManager.LoadScene("menuPrincipalTwoPlayer");
     }
     public void goVewWinner()
     {
@@ -32,9 +44,22 @@ public class BtnsMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("selectNumPlayers");
     }
+    public void goSeeRecords()
+    {
+        SceneManager.LoadScene("seeRecordsPila");
+    }
+    public void goSeeRecordsLista()
+    {
+        SceneManager.LoadScene("seeRecordsLista");
+    }
+    public void goSeeRecordsCola()
+    {
+        SceneManager.LoadScene("seeRecordsCola");
+    }
     public void aplicationExit()
     {
         Application.Quit();
 
     }
 }
+

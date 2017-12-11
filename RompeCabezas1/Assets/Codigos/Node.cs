@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Codigos
 {
-    class Node
+    public class Node
     {
         private int Data;
         private Node next;

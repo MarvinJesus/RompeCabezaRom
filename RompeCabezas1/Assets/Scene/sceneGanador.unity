@@ -10378,7 +10378,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1378614527}
-        m_MethodName: goSceneMenu
+        m_MethodName: goSceneMenuTwoPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

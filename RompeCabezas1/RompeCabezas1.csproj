@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0p5</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -79,15 +81,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Codigos\BtnsMenu.cs" />
+    <Compile Include="Assets\Codigos\Cola.cs" />
     <Compile Include="Assets\Codigos\ControllerWinner.cs" />
     <Compile Include="Assets\Codigos\DestructorObjetos.cs" />
     <Compile Include="Assets\Codigos\GameController.cs" />
     <Compile Include="Assets\Codigos\Lista.cs" />
+    <Compile Include="Assets\Codigos\ListaNivelesArbol.cs" />
     <Compile Include="Assets\Codigos\ListaScorePlayerOne.cs" />
     <Compile Include="Assets\Codigos\ListaScorePlayerTwo.cs" />
-    <Compile Include="Assets\Codigos\MoverPieza.cs" />
+    <Compile Include="Assets\Codigos\MovePieza.cs" />
     <Compile Include="Assets\Codigos\Node.cs" />
+    <Compile Include="Assets\Codigos\Pila.cs" />
     <Compile Include="Assets\Codigos\ScoreController.cs" />
+    <Compile Include="Assets\Codigos\SeeRecordsLista.cs" />
+    <Compile Include="Assets\Codigos\SeeRecordsCola.cs" />
+    <Compile Include="Assets\Codigos\SeeRecordsPila.cs" />
     <Compile Include="Assets\Codigos\selectCantPlayer.cs" />
     <Compile Include="Assets\Codigos\SonidosPieza.cs" />
     <Compile Include="Assets\Codigos\StoreControllerEnd.cs" />

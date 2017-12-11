@@ -5,6 +5,6 @@ using UnityEngine;
 public class ScoreController : MonoBehaviour {
     void Start () {}
 	void Update () {
-        GetComponent<TextMesh>().text = "Score : " + (MoverPieza.totalScore).ToString();
+        GetComponent<TextMesh>().text = "Score : " + (MovePieza.totalScore).ToString();
     }
 }

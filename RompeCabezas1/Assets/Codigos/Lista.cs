@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Assets.Codigos
 {
-    class Lista
+    public class Lista
     {
         private Node head = null;
         private int log;
@@ -25,6 +25,7 @@ namespace Assets.Codigos
         }
         private Lista(Node pNext)
         {
+            this.head = pNext;
             this.log = 0;
         }
         public Node getHead() {
@@ -89,6 +90,7 @@ namespace Assets.Codigos
             int dLong = getLong();
             dLong++;
             this.setLong(dLong);
+           
         }
         public int search(int pDate) {
             Node aux = this.getHead();

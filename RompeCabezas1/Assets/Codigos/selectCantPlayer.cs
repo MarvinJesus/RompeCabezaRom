@@ -8,6 +8,14 @@ public class selectCantPlayer : MonoBehaviour {
 	void Update () {}
     public void setCantPlayer(int pCantPlayer) {
         cantPlayer = pCantPlayer;
-        SceneManager.LoadScene("menuPrincipal");
+        if (cantPlayer == 1)
+        {
+            SceneManager.LoadScene("menuPrincipalOnePlayer");
+        }
+        else
+        {
+            SceneManager.LoadScene("menuPrincipalTwoPlayer");
+        }
+       
     }
 }

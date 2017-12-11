@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Inicio.unity
+- path: Assets/Scene/menuPrincipalTwoPlayer.unity
   isLoaded: 1
   isActive: 1

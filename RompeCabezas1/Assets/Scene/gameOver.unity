@@ -639,7 +639,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.8336086
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -668,6 +668,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &367288536
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.3399653
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.9101095
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.05859375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4531480665275192, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 82832142643692326, guid: 1291c0236ec78e0499ba3bc78a463307,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b127ba3d40010a2418a384206c4dbf1e, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1291c0236ec78e0499ba3bc78a463307, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &411021335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,7 +1412,7 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 44.001003, y: 11.076, z: 15.737}
 --- !u!1 &846097226
 GameObject:
@@ -1679,7 +1726,7 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 72.986}
 --- !u!1 &889685564
 GameObject:
@@ -2373,7 +2420,7 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.109}
 --- !u!1 &1275944039
 GameObject:
@@ -2974,7 +3021,7 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: -0.41500002, y: 1.769, z: -64.135}
 --- !u!1 &1723707597
 GameObject:
@@ -3759,7 +3806,7 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 10.233001, y: -13.5130005, z: -39.689003}
 --- !u!1 &1841700638
 GameObject:
@@ -4073,7 +4120,7 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 72.986}
 --- !u!1 &1926009228
 GameObject:
@@ -4701,5 +4748,5 @@ Transform:
   m_LocalScale: {x: 0.9523559, y: 0.9380514, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 39.176003, y: -46.303, z: -58.885002}

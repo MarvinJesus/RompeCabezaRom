@@ -27192,7 +27192,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1378614525}
-        m_MethodName: goSceneMenu
+        m_MethodName: goSceneMenuOnePlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
